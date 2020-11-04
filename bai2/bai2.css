@@ -1,1 +1,53 @@
-    
+.body {
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  display: flex;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  height: 150px;
+  width: 370px;
+}
+
+.card-header {
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+h3 {
+  text-align: center;
+  color: black;
+  font-size: 35px;
+}
+
+.card-body {
+  position: absolute;
+}
+
+.title {
+  justify-self: center;
+  padding: 0px 10px;
+}
+
+p {
+  text-align: center;
+}
+
+.box-func {
+  display: flex;
+  position: absolute;
+}
+
+.input-number {
+  padding: 0px 10px;
+}
+
+.btn-number {
+  padding: 0px 10px;
+}
