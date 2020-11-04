@@ -18,7 +18,7 @@
 let s1 ="", s2 ="", stringTest = `merge2String("`;
 let inputString, ansString = "";
 while(true){
-    inputString = prompt('Enter ` merge2String("string a", "string b") `');
+    inputString = prompt('Enter ` merge2String("stringa", "stringb") `');
     let check = true;
     for(let i = 0; i < 14; i++){
         if(inputString[i] !== stringTest[i]){
@@ -41,21 +41,20 @@ while(inputString[pos] != `"`){
     s2 += inputString[pos];
     pos++;
 }
-let len1 = s1.length;
-let len2 = s2.length;
-for(let i = 0; i < len1 || i < len2; i++){
+
+for(let i = 0; i < s1.length && i < s2.length; i++){
     ansString = ansString + s1[i] + s2[i];
 }
 
-if(len1 < len2){
-    for(let i = len1; i < len2; i++){
+if(s1.length < s2.length){
+    for(let i = s1.length; i < s2.length; i++){
         ansString = ansString + s2[i];
     }
 }
 
-if(len2 < len1){
-    for(let i = len2; i < len1; i++){
+if(s2.length < s1.length){
+    for(let i = s2.length; i < s1.length; i++){
         ansString = ansString + s1[i];
     }
 }
-alert(`${ansString}`);
+console.log(ansString);
